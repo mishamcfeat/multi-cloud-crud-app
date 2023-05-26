@@ -19,6 +19,14 @@ The `terraform` directory contains the Terraform scripts for deploying the appli
 
 1. Navigate to the `app` directory.
 2. Install the required Python packages:
-
-```bash
-pip install -r requirements.txt
+   "pip install -r requirements.txt"
+3. Run the Flask application
+   "python app.py"
+4. Build the docker image
+   "docker build -t multi-cloud-crud-app"
+5. Run the docker container
+   "docker run -p 5000:5000 multi-cloud-crud-app"
+6. Initialise Terraform:
+   "terraform init"
+   "terraform plan"
+   "terraform apply"
